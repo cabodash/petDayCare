@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">petDayCare</string>
+    <string name="copyright">© Paw Garden - All rights reserved</string>
+
+    <string name="emailHint">Email: example@mail.com</string>
+    <string name="passwordHint">Password: ******</string>
+    <string name="signUpButtonText">Sign up</string>
+    <string name="logInButtonText">Log in</string>
+    <string name="socialText">Visit our social networks</string>
+
+
+    <string name="alertTitleText">Exit without saving?</string>
+    <string name="alertBodyText">All data changed will be erased</string>
+    <string name="alertNoButton">No</string>
+    <string name="alertYesButton">Yes</string>
+    <string name="emptyListText">There are no pets added.
+        Press the paw to enter a new one</string>
+
+    <string name="selectImageTitle">Select an option</string>
+    <string name="takePhotoText">Take Photo</string>
+    <string name="selectGalleryText">Select from Gallery</string>
+    <string name="exitSelection">Cancel</string>
+
+    <string name="selectImageText">Select Image</string>
+    <string name="generalLabelText">Pet Data</string>
+    <string name="namePetText">Name: </string>
+    <string name="typePetText">Type: </string>
+    <string name="genderLabel">Gender</string>
+    <string name="weightPetLabel">Weight</string>
+    <string name="weightPetHint">0.0: </string>
+    <string name="saveButton">Register</string>
+    <string name="modifyButton">Modify</string>
+
+    <string name="registAlertTitle">Enter your data</string>
+    <string name="cancelButtonText">Return</string>
+    <string name="acceptButtonText">Register</string>
+
+
+
+</resources>

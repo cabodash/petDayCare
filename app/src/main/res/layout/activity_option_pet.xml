@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grass_bg"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="85"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="10dp"
+        android:paddingHorizontal="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:background="@drawable/option_card_bg">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/petImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/paw_bg"
+            android:background="@drawable/image_item_bg"
+            android:adjustViewBounds="true"
+            app:shapeAppearanceOverlay="@style/roundedImage"/>
+
+        <Button
+            android:id="@+id/selectImageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="15dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/selectImageText" />
+
+        <TextView
+            android:id="@+id/generalLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:text="@string/generalLabelText" />
+
+        <EditText
+            android:id="@+id/namePetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="@string/namePetText"
+            android:maxLength="25"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_marginVertical="5dp"
+            style="@style/customEditOptionText"/>
+
+        <EditText
+            android:id="@+id/typePetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:hint="@string/typePetText"
+            android:maxLength="25"
+            android:inputType="textPersonName"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_marginVertical="5dp"
+            style="@style/customEditOptionText"/>
+
+        <TextView
+            android:id="@+id/genderLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColorHint="@color/rotten_white"
+            android:textColor="@color/white"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_marginVertical="5dp"
+            android:hint="@string/genderLabel" />
+
+        <Spinner
+            android:id="@+id/genderSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_item_bg"
+            android:popupBackground="@drawable/spinner_dropdown_bg"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:layout_marginVertical="5dp"
+            android:paddingVertical="5dp"
+            android:layout_marginBottom="20dp" />
+
+        <TextView
+            android:id="@+id/weightPetLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/weightPetLabel"
+            android:textSize="20sp"
+            android:textColorHint="@color/rotten_white"
+            android:textColor="@color/rotten_white"
+            android:gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:layout_marginVertical="5dp"/>
+
+        <EditText
+            android:id="@+id/weightPetText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:ems="10"
+            android:textSize="20sp"
+            android:maxLength="4"
+            android:inputType="numberDecimal"
+            android:layout_gravity="center_horizontal"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:hint="@string/weightPetHint"
+            android:layout_marginVertical="5dp"
+            style="@style/customEditOptionText"/>
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="15">
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="20dp"
+            android:layout_centerInParent="true"
+            android:text="@string/saveButton" />
+    </RelativeLayout>
+
+</LinearLayout>
